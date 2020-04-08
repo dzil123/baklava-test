@@ -1,7 +1,34 @@
 <html>
     <head>
-        <script src="js/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/baklavajs@1.5.2/dist/index.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
     </head>
 
-    <body></body>
+    <body>
+        <h1>App</h1>
+        <div id="app">
+            <div id="baklava-wrapper">
+                <baklava-editor v-bind:plugin="viewPlugin"></baklava-editor>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@baklavajs/core@1.5.2/dist/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@baklavajs/plugin-engine@1.5.2/dist/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@baklavajs/plugin-interface-types/@1.5.2/dist/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@baklavajs/plugin-options-vue@1.5.2/dist/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@baklavajs/plugin-renderer-vue@1.5.2/dist/index.js"></script>
+
+        <script src="js/lib.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
